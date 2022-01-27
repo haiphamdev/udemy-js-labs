@@ -1,0 +1,28 @@
+{
+  "name": "js-labs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haiphamdev/udemy-js-labs.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Hai Pham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haiphamdev/udemy-js-labs/issues"
+  },
+  "homepage": "https://github.com/haiphamdev/udemy-js-labs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.4.6",
+    "jest": "^27.4.7"
+  }
+}
