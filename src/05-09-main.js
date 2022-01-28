@@ -6,7 +6,7 @@
 // mark < 4 --> 'Bad'
 
 // v1
-function classifyStudent(mark) {
+function classifyStudentV1(mark) {
   let result;
 
   if (mark > 8) result = 'Excellence';
@@ -18,7 +18,7 @@ function classifyStudent(mark) {
 }
 
 // v2
-function classifyStudent(mark) {
+function classifyStudentV2(mark) {
   if (mark < 0 || mark > 10) return '';
 
   let result = 'Bad';
@@ -31,7 +31,7 @@ function classifyStudent(mark) {
 }
 
 // v3
-function classifyStudent(mark) {
+export function classifyStudentV3(mark) {
   if (mark < 0 || mark > 10) return 'Invalid mark!';
 
   if (mark > 8) return 'Excellence';
@@ -40,8 +40,8 @@ function classifyStudent(mark) {
 
   return 'Bad';
 }
-console.log(classifyStudent(12));
-console.log(classifyStudent(9));
-console.log(classifyStudent(7));
-console.log(classifyStudent(5));
-console.log(classifyStudent(2));
+// console.log(classifyStudent(12));
+// console.log(classifyStudent(9));
+// console.log(classifyStudent(7));
+// console.log(classifyStudent(5));
+// console.log(classifyStudent(2));
