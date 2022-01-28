@@ -5,7 +5,7 @@
 // Other code: Something went wrong
 // Write a function that take errorCode and return the according message
 // v1
-function getErrorMessage(errorCode) {
+export function getErrorMessageV1(errorCode) {
   let message = '';
 
   switch (errorCode) {
@@ -31,7 +31,7 @@ function getErrorMessage(errorCode) {
 }
 
 // v2
-function getErrorMessage(errorCode) {
+export function getErrorMessageV2(errorCode) {
   const errorMap = {
     E01: 'Invalid username or password',
     E02: 'Too many attempts',
@@ -40,7 +40,7 @@ function getErrorMessage(errorCode) {
 
   return errorMap[errorCode] || 'Something went wrong';
 }
-console.log(getErrorMessage('E01'));
-console.log(getErrorMessage('E02'));
-console.log(getErrorMessage('E03'));
-console.log(getErrorMessage('E04'));
+// console.log(getErrorMessage('E01'));
+// console.log(getErrorMessage('E02'));
+// console.log(getErrorMessage('E03'));
+// console.log(getErrorMessage('E04'));
