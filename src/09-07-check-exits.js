@@ -1,7 +1,7 @@
 // every
 // v1
-function checkIfAllEven(numberList) {
-  if (!Array.isArray(numberList)) return false;
+export function checkIfAllEvenV1(numberList) {
+  if (!Array.isArray(numberList) || numberList.length === 0) return false;
 
   let isValid = true;
   for (let i = 0; i < numberList.length; i++) {
@@ -16,8 +16,8 @@ function checkIfAllEven(numberList) {
 }
 
 // v2
-function checkIfAllEven(numberList) {
-  if (!Array.isArray(numberList)) return false;
+export function checkIfAllEvenV2(numberList) {
+  if (!Array.isArray(numberList) || numberList.length === 0) return false;
 
   for (let i = 0; i < numberList.length; i++) {
     if (numberList[i] % 2 !== 0) return false;
@@ -25,68 +25,68 @@ function checkIfAllEven(numberList) {
 
   return true;
 }
-console.log(checkIfAllEven([1, 2, 3]));
-console.log(checkIfAllEven([2, 4, 6]));
+// console.log(checkIfAllEven([1, 2, 3]));
+// console.log(checkIfAllEven([2, 4, 6]));
 
 // some
-function checkIfSomeEven(numberList) {
-  if (!Array.isArray(numberList)) return false;
+// function checkIfSomeEven(numberList) {
+//   if (!Array.isArray(numberList)) return false;
 
-  for (let i = 0; i < numberList.length; i++) {
-    if (numberList[i] % 2 === 0) return true;
-  }
+//   for (let i = 0; i < numberList.length; i++) {
+//     if (numberList[i] % 2 === 0) return true;
+//   }
 
-  return false;
-}
-console.log(checkIfSomeEven([1, 3, 5]));
-console.log(checkIfSomeEven([2, 4, 6]));
+//   return false;
+// }
+// console.log(checkIfSomeEven([1, 3, 5]));
+// console.log(checkIfSomeEven([2, 4, 6]));
 
 // indexOf
-function hasExits(element, args) {
-  return element === args;
-}
+// function hasExits(element, args) {
+//   return element === args;
+// }
 
-function checkExitsFirst(arr, args) {
-  if (!Array.isArray(arr)) return -1;
+// function checkExitsFirst(arr, args) {
+//   if (!Array.isArray(arr)) return -1;
 
-  for (let i = 0; i < arr.length; i++) {
-    if (hasExits(arr[i], args)) return i;
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (hasExits(arr[i], args)) return i;
+//   }
 
-  return -1;
-}
-console.log(checkExitsFirst(['easy', 'frontend', 'easy'], 'easy'));
+//   return -1;
+// }
+// console.log(checkExitsFirst(['easy', 'frontend', 'easy'], 'easy'));
 
 // lastIndexOf
-function hasExits(element, args) {
-  return element === args;
-}
+// function hasExits(element, args) {
+//   return element === args;
+// }
 
-function checkExitsLast(arr, args) {
-  if (!Array.isArray(arr)) return -1;
+// function checkExitsLast(arr, args) {
+//   if (!Array.isArray(arr)) return -1;
 
-  let result = -1;
-  for (let i = 0; i < arr.length; i++) {
-    if (hasExits(arr[i], args)) result = i;
-  }
+//   let result = -1;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (hasExits(arr[i], args)) result = i;
+//   }
 
-  return result;
-}
-console.log(checkExitsLast(['easy', 'frontend', 'easy', 'easy'], 'easy'));
+//   return result;
+// }
+// console.log(checkExitsLast(['easy', 'frontend', 'easy', 'easy'], 'easy'));
 
 // includes
-function hasExits(element, args) {
-  return element === args;
-}
+// function hasExits(element, args) {
+//   return element === args;
+// }
 
-function checkExits(arr, args) {
-  if (!Array.isArray(arr)) return false;
+// function checkExits(arr, args) {
+//   if (!Array.isArray(arr)) return false;
 
-  for (let i = 0; i < arr.length; i++) {
-    if (hasExits(arr[i], args)) return true;
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (hasExits(arr[i], args)) return true;
+//   }
 
-  return false;
-}
-console.log(checkExits(['easy', 'frontend', 'easy'], 'easy'));
-console.log(checkExits(['frontend'], 'easy'));
+//   return false;
+// }
+// console.log(checkExits(['easy', 'frontend', 'easy'], 'easy'));
+// console.log(checkExits(['frontend'], 'easy'));
