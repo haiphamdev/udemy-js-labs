@@ -5,7 +5,7 @@
 // 4 <= mark <= 6 --> 'Not Good'
 // mark < 4 --> 'Bad'
 // Using switch...case to implement it
-function classifyStudent(mark) {
+export function classifyStudent(mark) {
   let result;
 
   switch (mark) {
@@ -39,8 +39,8 @@ function classifyStudent(mark) {
 
   return result;
 }
-console.log(classifyStudent(12));
-console.log(classifyStudent(10));
-console.log(classifyStudent(7));
-console.log(classifyStudent(5));
-console.log(classifyStudent(2));
+// console.log(classifyStudent(12));
+// console.log(classifyStudent(10));
+// console.log(classifyStudent(7));
+// console.log(classifyStudent(5));
+// console.log(classifyStudent(2));
