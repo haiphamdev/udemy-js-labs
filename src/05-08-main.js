@@ -2,7 +2,7 @@
 // If yes, return true. Otherwise return false
 // flag
 // v1
-function isPositiveEvenNumber(n) {
+export function isPositiveEvenNumberV1(n) {
   let isValid;
 
   if (n > 0 && n % 2 === 0) {
@@ -15,7 +15,7 @@ function isPositiveEvenNumber(n) {
 }
 
 // v2
-function isPositiveEvenNumber(n) {
+export function isPositiveEvenNumberV2(n) {
   let isValid = false;
 
   if (n > 0 && n % 2 === 0) {
@@ -26,7 +26,7 @@ function isPositiveEvenNumber(n) {
 }
 
 // v3
-function isPositiveEvenNumber(n) {
+export function isPositiveEvenNumberV3(n) {
   if (n > 0 && n % 2 === 0) {
     return true;
   }
@@ -35,7 +35,7 @@ function isPositiveEvenNumber(n) {
 }
 
 // v4
-function isPositiveEvenNumber(n) {
+export function isPositiveEvenNumberV4(n) {
   return n > 0 && n % 2 === 0;
 }
-console.log(isPositiveEvenNumber(5));
+// console.log(isPositiveEvenNumber(5));
